@@ -14,17 +14,38 @@ a {
 p, li{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
+    color: white;
 }
 
 h1, h2, h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+    color: white;
+}
+
+.thumbnails p {
+    color: black;
+}
+
+.thumbnails h3, h2 {
+    color: black;
+}
+
+.thumbnails img {
+    width: 75%;
+}
+
+.contact-text-styling h3 {
+    color: black;
+}
+
+.contact-text-styling p {
+    color: black;
 }
 
 h1 {
     margin-top: 0;
 }
-
 
 /* ================================= 
   Base Layout Styles
@@ -32,14 +53,34 @@ h1 {
 
 /* ---- Navigation ---- */
 
+.main-header {
+    background-color: cadetblue;
+}
+
+.main-footer {
+    background-color: cadetblue;
+}  
 
 /* ---- Layout Containers ---- */
 
 
+.intro-bits {
+    background-color: cadetblue;
+}
+
+.wrapper, thin {
+    margin-right: 1em;
+    margin-left: 1em;
+}
+
+.thin {
+    background-color: pink;
+    border-color: none;
+}
+
 /* ================================= 
   Media Queries
 ==================================== */
-
 
 @media (min-width: 320px) {
     
