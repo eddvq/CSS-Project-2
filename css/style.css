@@ -15,12 +15,32 @@ p, li{
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     color: white;
+    
+}
+
+p {
+    text-align: center;
+    line-height: 1.5em;
+}
+
+/*.thumbnails img {
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}*/
+
+hr {
+    border-top: 2px dashed lightpink;
+    border-bottom: none;
+    
 }
 
 h1, h2, h3 {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     color: white;
+    text-align: center
 }
 
 .thumbnails p {
@@ -31,21 +51,22 @@ h1, h2, h3 {
     color: black;
 }
 
-.thumbnails img {
-    width: 75%;
-}
-
-.contact-text-styling h3 {
-    color: black;
-}
-
-.contact-text-styling p {
-    color: black;
-}
-
 h1 {
     margin-top: 0;
 }
+
+.wrapper {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/*#profile-pic {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}*/
 
 /* ================================= 
   Base Layout Styles
@@ -53,30 +74,100 @@ h1 {
 
 /* ---- Navigation ---- */
 
-.main-header {
-    background-color: cadetblue;
-}
-
-.main-footer {
-    background-color: cadetblue;
-}  
-
-/* ---- Layout Containers ---- */
-
-
 .intro-bits {
     background-color: cadetblue;
 }
 
-.wrapper, thin {
-    margin-right: 1em;
+.main-header {
+    background-color: cadetblue;
+}
+
+.contact-color {
+    background-color: cadetblue;
+}
+
+.main-header h1 {
+        text-align: center;
+        display: block;
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+.main-header li{
+    display: block;
+    text-align: center;
+    background-color: lightcoral;
+    margin-top: 5px;
+    
+}
+
+.main-header a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main-header li:hover{
+    background-color: lightsalmon;
+    transition: .5s;
+}
+
+/* ---- Footer Nav ---- */
+
+
+
+.main-footer div,
+.footer-list {
+    display: flex;
+}
+
+.main-footer h3 {
+    margin-right: auto;
+}
+
+.footer-list{
+    flex-direction: row;
+    align-self: center;
+}
+
+.footer-list li {
     margin-left: 1em;
 }
 
-.thin {
-    background-color: pink;
-    border-color: none;
+/*
+.main-footer h3{
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 50%;
+    font-size: 1em;
 }
+
+.main-footer ul {
+    display: inline-block;
+}
+
+.main-footer li {
+    display: inline-block;
+}
+*/
+
+/*
+.intro-bits p {
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0;
+}
+*/
+
+/* ---- Layout Containers ---- */
+
+/*.intro-bits {
+    background-color: cadetblue;*/
+
+/*Without this part the image #profile-pic takes up the whole space.*/
+
+
 
 /* ================================= 
   Media Queries
@@ -84,20 +175,54 @@ h1 {
 
 @media (min-width: 320px) {
     
-  
-
+    #profile-pic {
+        display: block;
+        width: 75%;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        padding-top: 30px;
 }
-
-@media (min-width: 769px) {
-
-
+    
+    .thumbnails img {
+        display: block;
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
 }
-
-@media (min-width: 1024px){
-        
- 
+    
+    .intro-bits p {
+        padding-bottom: 30px;
+        padding-top: 0;
+        margin-top: 0;
+}
+    .thumbnails p {
+        margin-bottom: 30px;
+    }
+    
+    .contact-text-styling h3 {
+        padding-top: 30px;
+    }
+    
+    .extra-nav{
+        display: none;
+    }
+    .solo-nav {
+        display: block;
+    }
     
 }
+
+@media (min-width: 768px){
+        .solo-nav{
+        display: none;
+    }
+    .extra-nav{
+        display: block;
+    }
+}
+    
+
+
 
 .clearfix::after{
     content: "";
