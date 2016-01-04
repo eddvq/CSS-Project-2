@@ -308,6 +308,38 @@ h1 {
 }
 
 @media (min-width: 1024px){
+.main-header div,
+.main-header ul {
+    display: flex;
+}
+
+.main-header h1 {
+    margin-right: auto;
+}
+
+.main-header li{
+    flex-direction: row;
+    align-self: center;
+    margin-left: 1em;
+}
+
+    .intro-bits p {
+        font-size: 1.7em;
+    }
+
+.main-header ul {
+    margin-right: 1em;
+}
+    
+    .col {
+    display: inline-block;
+    width: 33.3%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+    #profile-pic {
+    width: 25%;
+    }
     
 }
 
