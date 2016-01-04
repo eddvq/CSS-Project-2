@@ -31,8 +31,8 @@ p {
 }*/
 
 hr {
-    border-top: 2px dashed lightpink;
-    border-bottom: none;
+    border-top: 2px dashed pink;
+    border-bottom: none
     
 }
 
@@ -110,7 +110,7 @@ h1 {
 
 .main-header li:hover{
     background-color: lightsalmon;
-    transition: .5s;
+    transition-duration: .5s;
 }
 
 /* ---- Footer Nav ---- */
