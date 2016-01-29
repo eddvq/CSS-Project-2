@@ -1,0 +1,114 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p, li {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  color: white; }
+
+p {
+  line-height: 1.5em; }
+
+hr {
+  border-top: 2px dashed pink;
+  border-bottom: none; }
+
+h1, h2, h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: white; }
+
+.thumbnails p, h3, h2 {
+  color: black; }
+
+h1 {
+  margin-top: 0; }
+
+.wrapper {
+  margin-left: 1em;
+  margin-right: 1em; }
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+/* ---- Navigation ---- */
+.intro-bits,
+.main-header,
+.contact-color {
+  background-color: cadetblue; }
+
+.main-header h1 {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-bottom: 0; }
+.main-header li {
+  display: block;
+  background-color: lightcoral;
+  margin-top: 5px; }
+.main-header a {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+.main-header li:hover {
+  background-color: lightsalmon;
+  transition-duration: .5s; }
+
+p, h1, h2, h3, .main-header h1, .main-header li {
+  text-align: center; }
+
+/* ---- Footer Nav ---- */
+.main-footer div {
+  display: flex; }
+.main-footer h3 {
+  margin-right: auto; }
+
+.footer-list {
+  display: flex;
+  flex-direction: row;
+  align-self: center; }
+  .footer-list li {
+    margin-left: 1em; }
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (min-width: 320px) {
+  #profile-pic {
+    display: block;
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: 30px; }
+
+  .thumbnails img {
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto; }
+    .thumbnails img p {
+      margin-bottom: 30px; }
+
+  .intro-bits p {
+    padding-bottom: 30px;
+    padding-top: 0;
+    margin-top: 0; }
+
+  .contact-text-styling h3 {
+    padding-top: 30px; }
+
+  .extra-nav {
+    display: none; }
+
+  .solo-nav {
+    display: block; } }
+/*@import 'components/_index';*/
+
+/*# sourceMappingURL=application.css.map */

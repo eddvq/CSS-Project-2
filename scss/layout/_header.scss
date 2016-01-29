@@ -1,0 +1,44 @@
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.intro-bits, 
+.main-header, 
+.contact-color {
+    background-color: $color-prim;
+}
+
+
+.main-header {
+    & h1 {
+        @extend %centered;
+        
+        display: block;
+        
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    & li{
+        @extend %centered;
+        
+        display: block;
+        background-color: $color-sec;
+        margin-top: 5px;
+    
+    }
+
+    & a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    & li:hover{
+        background-color: $hipink;
+        transition-duration: .5s;
+    }
+}

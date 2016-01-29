@@ -1,0 +1,20 @@
+/* ---- Footer Nav ---- */
+
+.main-footer{
+    & div {
+    display: flex;
+    }
+    & h3 {
+    margin-right: auto;
+    }
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: row;
+    align-self: center;   
+& li {
+    margin-left: 1em;
+    }
+}
+
