@@ -80,35 +80,177 @@ p, h1, h2, h3, .main-header h1, .main-header li {
 /* ================================= 
   Media Queries
 ==================================== */
+#profile-pic {
+  display: block;
+  width: 75%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  padding-top: 30px; }
+  @media (min-width: 768px) {
+    #profile-pic {
+      float: right;
+      width: 40%;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 1.5em;
+      margin-left: 2em; } }
+  @media (min-width: 1024px) {
+    #profile-pic {
+      width: 25%; } }
+
+.thumbnails img {
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto; }
+  .thumbnails img p {
+    margin-bottom: 30px; }
+  @media (min-width: 768px) {
+    .thumbnails img h2 {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: 2.1em; } }
+
+.introbits p {
+  padding-bottom: 30px;
+  padding-top: 0;
+  margin-top: 0; }
+  @media (min-width: 768px) {
+    .introbits p {
+      text-align: left;
+      font-size: 1.3em;
+      margin-left: 1.15em;
+      padding-right: 1em; } }
+  @media (min-width: 1024px) {
+    .introbits p {
+      font-size: 1.7em; } }
+
+@media (min-width: 768px) {
+  .intro-bits {
+    padding-top: 30px;
+    padding-bottom: 30px; } }
+
 @media (min-width: 320px) {
-  #profile-pic {
-    display: block;
-    width: 75%;
+  .contact-text-styling {
+    padding-top: 30px; } }
+@media (min-width: 768px) {
+  .contact-text-styling .contact-text-styling p {
+    font-size: 1.5em;
+    width: 60%;
     margin: 0 auto;
-    padding-bottom: 30px;
-    padding-top: 30px; }
+    margin-bottom: 30px; } }
+@media (min-width: 1024px) {
+  .contact-text-styling .contact-text-styling h3 {
+    font-size: 2.1em; } }
 
-  .thumbnails img {
-    display: block;
-    width: 90%;
+.solo-nav {
+  display: block; }
+  @media (min-width: 768px) {
+    .solo-nav {
+      display: none; } }
+
+.extra-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .extra-nav {
+      display: block; } }
+
+@media (min-width: 768px) {
+  .main-header h1 {
     text-align: center;
-    margin: 0 auto; }
-    .thumbnails img p {
-      margin-bottom: 30px; }
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .main-header ul {
+    text-align: center; }
+  .main-header li {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: transparent; }
+  .main-header a {
+    display: block;
+    font-size: 1.3em;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-bottom-color: lightpink; } }
 
-  .intro-bits p {
-    padding-bottom: 30px;
-    padding-top: 0;
-    margin-top: 0; }
+@media (min-width: 768px) {
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top; }
+    .col p {
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      font-size: 1.5em; }
+    .col h3 {
+      font-size: 1.5em; } }
+@media (min-width: 1024px) {
+  .col {
+    display: inline-block;
+    width: 33.3%;
+    margin-right: -4px;
+    vertical-align: top; } }
 
-  .contact-text-styling h3 {
-    padding-top: 30px; }
+@media (min-width: 768px) {
+  /*.intro-bits{
+      @media (min-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+   }*/
+  /*.col {
+      display: inline-block;
+      width: 50%;
+      margin-right: -4px;
+      vertical-align: top;
+      & p {
+          width: 80%;
+          margin: 0 auto;
+          margin-bottom: 30px;
+          font-size: 1.5em
+      }
+      & h3{
+          font-size: 1.5em;
+      }
+      @media (min-width: 1024px) {
+              display: inline-block;
+              width: 33.3%;
+              margin-right: -4px;
+              vertical-align: top;
+      }
+  }*/ }
+@media (min-width: 1024px) {
+  .main-header div,
+  .main-header ul {
+    display: flex; }
 
-  .extra-nav {
-    display: none; }
+  .main-header h1 {
+    margin-right: auto; }
 
-  .solo-nav {
-    display: block; } }
+  .main-header li {
+    flex-direction: row;
+    align-self: center;
+    margin-left: 1em; }
+
+  .main-header ul {
+    margin-right: 1em; }
+
+  /*    .col {
+      display: inline-block;
+      width: 33.3%;
+      margin-right: -4px;
+      vertical-align: top;
+  }*/ }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
 /*@import 'components/_index';*/
 
 /*# sourceMappingURL=application.css.map */

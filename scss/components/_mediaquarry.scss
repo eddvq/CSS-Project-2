@@ -2,38 +2,209 @@
   Media Queries
 ==================================== */
 
-@media (min-width: 320px) {
-    
     #profile-pic {
         @include presentation(block, 75%);
         margin: 0 auto; 
         padding-bottom: 30px;
         padding-top: 30px;
+        @media #{$mid}{
+            float: right;
+            width: 40%;
+            padding-top:0;
+            padding-bottom: 0;
+            padding-right: 1.5em;
+            margin-left: 2em;
+        };
+        @media #{$big}{
+            width: 25%;
+        };
 }
-    
     .thumbnails img {
         @include presentation(block, 90%, center);
         margin: 0 auto;
         & p {
               margin-bottom: 30px;
         }
+        @media #{$mid}{
+            & h2 {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                font-size: 2.1em;
+        }
+            
+        }
 }
-    
-    .intro-bits p {
+
+
+
+.introbits p {
         padding-bottom: 30px;
         padding-top: 0;
         margin-top: 0;
+        @media #{$mid} {
+                text-align: left;
+                font-size: 1.3em;
+                margin-left: 1.15em;
+                padding-right: 1em;
+        }
+        @media #{$big} {
+            font-size: 1.7em;
+        }
+    }
+
+.intro-bits{
+       @media #{$mid} {
+         padding-top: 30px;
+         padding-bottom: 30px;
+       }
+    }
+
+    .contact-text-styling{
+        @media #{$min}{
+            padding-top: 30px;
+        };
+        @media #{$mid}{
+            .contact-text-styling p {font-size: 1.5em;
+                width: 60%;
+                margin: 0 auto;
+                margin-bottom: 30px;};
+        };
+        @media #{$big}{
+            .contact-text-styling h3 {
+                font-size: 2.1em;
+            }
+        }
 }
-    
-    .contact-text-styling h3 {
-        padding-top: 30px;
-    }
-    
-    .extra-nav{
-        display: none;
-    }
     .solo-nav {
         display: block;
+        @media #{$mid} {
+        display: none;
+        }
     }
+    .extra-nav{
+        display: none;
+        @media #{$mid} {
+        display: block;
+        }
+    }
+
+.main-header {
+    @media #{$mid}{
+        & h1 {
+            text-align: center;
+            display: block;
+            padding-top: 15px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        & ul {
+            text-align: center;
+        }
+        & li {
+            display: inline-block;
+            margin: 0 auto;
+            margin-top: 5px;
+            background-color: transparent;
+        }
+        & a{
+            display: block;
+            font-size: 1.3em;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-bottom-color: $button-pink;
+        }
+    }
+}
+
+.col {
+    @media #{$mid} {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    & p {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 1.5em
+    }
+    & h3{
+        font-size: 1.5em;
+        }
+    }
+    @media #{$big} {
+            display: inline-block;
+            width: 33.3%;
+            margin-right: -4px;
+            vertical-align: top;
+    }
+}
+
+@media (min-width: 768px){
+
+   /*.intro-bits{
+       @media #{$mid} {
+         padding-top: 30px;
+         padding-bottom: 30px;
+       }
+    }*/
+    
+    
+/*.col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    & p {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 1.5em
+    }
+    & h3{
+        font-size: 1.5em;
+    }
+    @media #{$big} {
+            display: inline-block;
+            width: 33.3%;
+            margin-right: -4px;
+            vertical-align: top;
+    }
+}*/
     
 }
+
+@media (min-width: 1024px){
+.main-header div,
+.main-header ul {
+    display: flex;
+}
+
+.main-header h1 {
+    margin-right: auto;
+}
+
+.main-header li{
+    flex-direction: row;
+    align-self: center;
+    margin-left: 1em;
+}
+
+.main-header ul {
+    margin-right: 1em;
+}
+    
+/*    .col {
+    display: inline-block;
+    width: 33.3%;
+    margin-right: -4px;
+    vertical-align: top;
+}*/
+
+}
+
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;}
