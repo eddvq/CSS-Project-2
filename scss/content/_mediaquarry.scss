@@ -4,9 +4,9 @@
 
     #profile-pic {
         @include presentation(block, 75%);
-        margin: 0 auto; 
-        padding-bottom: 30px;
-        padding-top: 30px;
+            margin: 0 auto; 
+            padding-bottom: 30px;
+            padding-top: 30px;
         @media #{$mid}{
             float: right;
             width: 40%;
@@ -74,7 +74,7 @@
         }
 }
     .solo-nav {
-        display: block;
+        @extend %block;
         @media #{$mid} {
         display: none;
         }

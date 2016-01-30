@@ -19,7 +19,7 @@ p, li{
 }
 
 p {
-    @extend %centered; //THIS MAY CAUSE PROBLEMS
+    @extend %centered; 
     line-height: 1.5em;
 }
 
@@ -34,11 +34,15 @@ h1, h2, h3 {
     font-family: $raleway;
     font-weight: $midwt;
     color: white;
-    @extend %centered; //THIS MAY CAUSE PROBLEMS
+    @extend %centered; 
 }
 
-.thumbnails p, h3, h2 {
+.thumbnails p, h2, h3 {
     color: $black;
+}
+
+#wht {
+    color: white;
 }
 
 h1 {
@@ -46,6 +50,5 @@ h1 {
 }
 
 .wrapper {
-    margin-left: 1em;
-    margin-right: 1em;
+    @extend %oneem;
 }

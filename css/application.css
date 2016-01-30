@@ -1,3 +1,7 @@
+.wrapper {
+  margin-left: 1em;
+  margin-right: 1em; }
+
 /* ================================= 
   Base Element Styles
 ==================================== */
@@ -25,15 +29,14 @@ h1, h2, h3 {
   font-weight: 700;
   color: white; }
 
-.thumbnails p, h3, h2 {
+.thumbnails p, h2, h3 {
   color: black; }
+
+#wht {
+  color: white; }
 
 h1 {
   margin-top: 0; }
-
-.wrapper {
-  margin-left: 1em;
-  margin-right: 1em; }
 
 /* ================================= 
   Base Layout Styles
@@ -76,6 +79,9 @@ p, h1, h2, h3, .main-header h1, .main-header li {
   align-self: center; }
   .footer-list li {
     margin-left: 1em; }
+
+.solo-nav {
+  display: block; }
 
 /* ================================= 
   Media Queries
@@ -143,11 +149,9 @@ p, h1, h2, h3, .main-header h1, .main-header li {
   .contact-text-styling .contact-text-styling h3 {
     font-size: 2.1em; } }
 
-.solo-nav {
-  display: block; }
-  @media (min-width: 768px) {
-    .solo-nav {
-      display: none; } }
+@media (min-width: 768px) {
+  .solo-nav {
+    display: none; } }
 
 .extra-nav {
   display: none; }
